@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ListaDeUsuarios extends StatelessWidget {
-  const ListaDeUsuarios({super.key});
+import 'features/users/presentation/pages/users_list_page.dart';
+
+class InfoUsersListPage extends StatelessWidget {
+  const InfoUsersListPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Lista de Usuarios'),
-      ),
-    );
+    return const UserListPage();
   }
 }
