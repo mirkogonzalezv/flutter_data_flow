@@ -33,6 +33,7 @@ dependencies:
   json_annotation: ^4.8.1
   freezed_annotation: ^2.4.1
   flutter_bloc: ^8.1.3
+  dartz: ^0.10.1
   client_api:
     path: ../../client_api
 

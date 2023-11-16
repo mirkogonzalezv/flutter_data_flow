@@ -10,7 +10,7 @@ part 'list_users_response.g.dart';
 @freezed
 class ListUsersResponse with _$ListUsersResponse {
   factory ListUsersResponse({
-    required int id,
+    required int page,
     @JsonKey(name: 'per_page') required int perPage,
     required int total,
     @JsonKey(name: 'total_pages') required int totalPages,

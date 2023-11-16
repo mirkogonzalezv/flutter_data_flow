@@ -9,7 +9,7 @@ part of 'list_users_response.dart';
 _$ListUsersResponseImpl _$$ListUsersResponseImplFromJson(
         Map<String, dynamic> json) =>
     _$ListUsersResponseImpl(
-      id: json['id'] as int,
+      page: json['page'] as int,
       perPage: json['per_page'] as int,
       total: json['total'] as int,
       totalPages: json['total_pages'] as int,
@@ -21,7 +21,7 @@ _$ListUsersResponseImpl _$$ListUsersResponseImplFromJson(
 Map<String, dynamic> _$$ListUsersResponseImplToJson(
         _$ListUsersResponseImpl instance) =>
     <String, dynamic>{
-      'id': instance.id,
+      'page': instance.page,
       'per_page': instance.perPage,
       'total': instance.total,
       'total_pages': instance.totalPages,

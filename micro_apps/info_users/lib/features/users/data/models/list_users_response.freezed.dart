@@ -20,7 +20,7 @@ ListUsersResponse _$ListUsersResponseFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$ListUsersResponse {
-  int get id => throw _privateConstructorUsedError;
+  int get page => throw _privateConstructorUsedError;
   @JsonKey(name: 'per_page')
   int get perPage => throw _privateConstructorUsedError;
   int get total => throw _privateConstructorUsedError;
@@ -42,7 +42,7 @@ abstract class $ListUsersResponseCopyWith<$Res> {
       _$ListUsersResponseCopyWithImpl<$Res, ListUsersResponse>;
   @useResult
   $Res call(
-      {int id,
+      {int page,
       @JsonKey(name: 'per_page') int perPage,
       int total,
       @JsonKey(name: 'total_pages') int totalPages,
@@ -62,16 +62,16 @@ class _$ListUsersResponseCopyWithImpl<$Res, $Val extends ListUsersResponse>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
+    Object? page = null,
     Object? perPage = null,
     Object? total = null,
     Object? totalPages = null,
     Object? users = freezed,
   }) {
     return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
+      page: null == page
+          ? _value.page
+          : page // ignore: cast_nullable_to_non_nullable
               as int,
       perPage: null == perPage
           ? _value.perPage
@@ -102,7 +102,7 @@ abstract class _$$ListUsersResponseImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {int id,
+      {int page,
       @JsonKey(name: 'per_page') int perPage,
       int total,
       @JsonKey(name: 'total_pages') int totalPages,
@@ -120,16 +120,16 @@ class __$$ListUsersResponseImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
+    Object? page = null,
     Object? perPage = null,
     Object? total = null,
     Object? totalPages = null,
     Object? users = freezed,
   }) {
     return _then(_$ListUsersResponseImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
+      page: null == page
+          ? _value.page
+          : page // ignore: cast_nullable_to_non_nullable
               as int,
       perPage: null == perPage
           ? _value.perPage
@@ -155,7 +155,7 @@ class __$$ListUsersResponseImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$ListUsersResponseImpl implements _ListUsersResponse {
   _$ListUsersResponseImpl(
-      {required this.id,
+      {required this.page,
       @JsonKey(name: 'per_page') required this.perPage,
       required this.total,
       @JsonKey(name: 'total_pages') required this.totalPages,
@@ -166,7 +166,7 @@ class _$ListUsersResponseImpl implements _ListUsersResponse {
       _$$ListUsersResponseImplFromJson(json);
 
   @override
-  final int id;
+  final int page;
   @override
   @JsonKey(name: 'per_page')
   final int perPage;
@@ -188,7 +188,7 @@ class _$ListUsersResponseImpl implements _ListUsersResponse {
 
   @override
   String toString() {
-    return 'ListUsersResponse(id: $id, perPage: $perPage, total: $total, totalPages: $totalPages, users: $users)';
+    return 'ListUsersResponse(page: $page, perPage: $perPage, total: $total, totalPages: $totalPages, users: $users)';
   }
 
   @override
@@ -196,7 +196,7 @@ class _$ListUsersResponseImpl implements _ListUsersResponse {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ListUsersResponseImpl &&
-            (identical(other.id, id) || other.id == id) &&
+            (identical(other.page, page) || other.page == page) &&
             (identical(other.perPage, perPage) || other.perPage == perPage) &&
             (identical(other.total, total) || other.total == total) &&
             (identical(other.totalPages, totalPages) ||
@@ -206,7 +206,7 @@ class _$ListUsersResponseImpl implements _ListUsersResponse {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, perPage, total, totalPages,
+  int get hashCode => Object.hash(runtimeType, page, perPage, total, totalPages,
       const DeepCollectionEquality().hash(_users));
 
   @JsonKey(ignore: true)
@@ -226,7 +226,7 @@ class _$ListUsersResponseImpl implements _ListUsersResponse {
 
 abstract class _ListUsersResponse implements ListUsersResponse {
   factory _ListUsersResponse(
-          {required final int id,
+          {required final int page,
           @JsonKey(name: 'per_page') required final int perPage,
           required final int total,
           @JsonKey(name: 'total_pages') required final int totalPages,
@@ -237,7 +237,7 @@ abstract class _ListUsersResponse implements ListUsersResponse {
       _$ListUsersResponseImpl.fromJson;
 
   @override
-  int get id;
+  int get page;
   @override
   @JsonKey(name: 'per_page')
   int get perPage;
