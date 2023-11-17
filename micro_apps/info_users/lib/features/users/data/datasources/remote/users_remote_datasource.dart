@@ -1,7 +1,7 @@
 import 'package:client_api/client_api.dart';
 import 'package:info_users/features/users/data/models/list_users_response.dart';
-import 'package:info_users/features/users/domain/entities/user.dart';
-import 'package:info_users/features/users/domain/repositories/users_repository.dart';
+
+import '../../../domain/repositories/remote/users_repository.dart';
 
 class UsersRemoteDataSource implements UserRepository {
   UsersRemoteDataSource._privateConstructor();
@@ -18,11 +18,5 @@ class UsersRemoteDataSource implements UserRepository {
       RequestApi.get(_baseUrl + usersPath),
       (json) => ListUsersResponse.fromJson(json),
     );
-  }
-
-  @override
-  Future<User> verUsuario(User user) {
-    // TODO: implement verUsuario
-    throw UnimplementedError();
   }
 }

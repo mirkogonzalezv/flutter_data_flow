@@ -20,12 +20,17 @@ User _$UserFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$User {
+  @HiveField(0)
   int get id => throw _privateConstructorUsedError;
+  @HiveField(1)
   String get email => throw _privateConstructorUsedError;
+  @HiveField(2)
   @JsonKey(name: 'first_name')
   String get firstName => throw _privateConstructorUsedError;
+  @HiveField(3)
   @JsonKey(name: 'last_name')
   String get lastName => throw _privateConstructorUsedError;
+  @HiveField(4)
   String get avatar => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -39,11 +44,11 @@ abstract class $UserCopyWith<$Res> {
       _$UserCopyWithImpl<$Res, User>;
   @useResult
   $Res call(
-      {int id,
-      String email,
-      @JsonKey(name: 'first_name') String firstName,
-      @JsonKey(name: 'last_name') String lastName,
-      String avatar});
+      {@HiveField(0) int id,
+      @HiveField(1) String email,
+      @HiveField(2) @JsonKey(name: 'first_name') String firstName,
+      @HiveField(3) @JsonKey(name: 'last_name') String lastName,
+      @HiveField(4) String avatar});
 }
 
 /// @nodoc
@@ -98,11 +103,11 @@ abstract class _$$UserImplCopyWith<$Res> implements $UserCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {int id,
-      String email,
-      @JsonKey(name: 'first_name') String firstName,
-      @JsonKey(name: 'last_name') String lastName,
-      String avatar});
+      {@HiveField(0) int id,
+      @HiveField(1) String email,
+      @HiveField(2) @JsonKey(name: 'first_name') String firstName,
+      @HiveField(3) @JsonKey(name: 'last_name') String lastName,
+      @HiveField(4) String avatar});
 }
 
 /// @nodoc
@@ -150,26 +155,31 @@ class __$$UserImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$UserImpl implements _User {
   _$UserImpl(
-      {required this.id,
-      required this.email,
-      @JsonKey(name: 'first_name') required this.firstName,
-      @JsonKey(name: 'last_name') required this.lastName,
-      required this.avatar});
+      {@HiveField(0) required this.id,
+      @HiveField(1) required this.email,
+      @HiveField(2) @JsonKey(name: 'first_name') required this.firstName,
+      @HiveField(3) @JsonKey(name: 'last_name') required this.lastName,
+      @HiveField(4) required this.avatar});
 
   factory _$UserImpl.fromJson(Map<String, dynamic> json) =>
       _$$UserImplFromJson(json);
 
   @override
+  @HiveField(0)
   final int id;
   @override
+  @HiveField(1)
   final String email;
   @override
+  @HiveField(2)
   @JsonKey(name: 'first_name')
   final String firstName;
   @override
+  @HiveField(3)
   @JsonKey(name: 'last_name')
   final String lastName;
   @override
+  @HiveField(4)
   final String avatar;
 
   @override
@@ -212,25 +222,32 @@ class _$UserImpl implements _User {
 
 abstract class _User implements User {
   factory _User(
-      {required final int id,
-      required final String email,
-      @JsonKey(name: 'first_name') required final String firstName,
-      @JsonKey(name: 'last_name') required final String lastName,
-      required final String avatar}) = _$UserImpl;
+      {@HiveField(0) required final int id,
+      @HiveField(1) required final String email,
+      @HiveField(2)
+      @JsonKey(name: 'first_name')
+      required final String firstName,
+      @HiveField(3) @JsonKey(name: 'last_name') required final String lastName,
+      @HiveField(4) required final String avatar}) = _$UserImpl;
 
   factory _User.fromJson(Map<String, dynamic> json) = _$UserImpl.fromJson;
 
   @override
+  @HiveField(0)
   int get id;
   @override
+  @HiveField(1)
   String get email;
   @override
+  @HiveField(2)
   @JsonKey(name: 'first_name')
   String get firstName;
   @override
+  @HiveField(3)
   @JsonKey(name: 'last_name')
   String get lastName;
   @override
+  @HiveField(4)
   String get avatar;
   @override
   @JsonKey(ignore: true)

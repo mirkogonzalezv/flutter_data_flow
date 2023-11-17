@@ -2,8 +2,8 @@ import 'package:dartz/dartz.dart';
 import 'package:info_users/features/users/domain/entities/user.dart';
 import 'package:info_users/features/users/domain/usecases/users_usecases.dart';
 
-import '../../domain/repositories/users_repository.dart';
-import '../repositories/users_repository_impl.dart';
+import '../../domain/repositories/remote/users_repository.dart';
+import '../repositories/remote/users_repository_impl.dart';
 
 class UsersUsescasesImpl implements UsersUsescases {
   final UserRepository _userRepository = UsersRepositoryImpl();
